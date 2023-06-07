@@ -79,11 +79,28 @@ form {
 }
 
 button {
+  margin: 20px 0 20px 0;
   color: white;
   background: #2d2c32;
   height: 35px;
   width: 75px;
   border: none;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stack button {
+  cursor: pointer;
+  background-color: #6a99cf;
+  width: 150px
+}
+
+.stack button:hover {
+  background-color: #4678b1;
 }
 
 button:hover {
@@ -102,8 +119,24 @@ input:focus {
 }
 
 input{
+  margin-top: 20px;
   height: 35px;
   border: 2px solid ;
   border-color: #2d2c323d transparent #2d2c323d #2d2c323d;
   padding: 0 10px;
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.login-form input {
+  border-color: #2d2c323d;
+}
+
+.login-form input:hover,
+.login-form input:focus {
+  border-color: #4678b1;
 }
